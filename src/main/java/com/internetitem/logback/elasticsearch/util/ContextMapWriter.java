@@ -17,7 +17,7 @@ public class ContextMapWriter {
         if (arguments == null || arguments.length == 0) return;
         Object lastElement = arguments[arguments.length - 1];
         if (lastElement instanceof Map) {
-            Map<String, Object> indexes = traverseObject(new HashMap<String, Object>(), "context", lastElement);
+            Map<String, Object> indexes = traverseObject(new HashMap<String, Object>(), "payload", lastElement);
             for (Map.Entry<String, Object> entry : indexes.entrySet()) {
                 String key = entry.getKey();
                 Object value = entry.getValue();
