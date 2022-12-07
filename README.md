@@ -1,0 +1,1 @@
+# logback-elasticsearch-appender
